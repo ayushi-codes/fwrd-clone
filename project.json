@@ -1,0 +1,22 @@
+{
+  "overview": "A pixel-faithful homepage clone of FWRD.com — the luxury fashion e-commerce site. Features an announcement bar, sticky header with FWRD branding and navigation, a full-width hero carousel, trending editorial cards, a featured product grid with wishlist toggling, curated shop lookbooks, and a footer with newsletter signup.",
+  "features": [
+    "Sticky header with FWRD logo and navigation icons",
+    "Full-width hero carousel with 6+ editorial slides and Shop Now CTAs",
+    "Trending editorial section with hover effects",
+    "Featured product grid with designer names, prices, and wishlist hearts",
+    "Curated shops / lookbook cards section",
+    "Footer with newsletter signup and app download promo",
+    "Luxury black-and-white aesthetic with gradient placeholder imagery"
+  ],
+  "category": "showcase",
+  "tags": [
+    "fashion",
+    "ecommerce",
+    "luxury",
+    "editorial",
+    "homepage-clone",
+    "static"
+  ],
+  "last_updated": "2026-04-14T08:21:01.546Z"
+}

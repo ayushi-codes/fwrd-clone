@@ -1,0 +1,134 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --font-display: "General Sans";
+    --font-body: "General Sans";
+    --font-mono: "Geist Mono";
+    --radius: 0;
+
+    --background: 0.98 0 0;
+    --foreground: 0.08 0 0;
+    --card: 0.96 0 0;
+    --card-foreground: 0.08 0 0;
+    --popover: 0.96 0 0;
+    --popover-foreground: 0.08 0 0;
+
+    --primary: 0.18 0 0;
+    --primary-foreground: 0.98 0 0;
+
+    --secondary: 0.75 0 0;
+    --secondary-foreground: 0.12 0 0;
+    --muted: 0.82 0 0;
+    --muted-foreground: 0.35 0 0;
+
+    --accent: 0.15 0 0;
+    --accent-foreground: 0.98 0 0;
+
+    --destructive: 0.55 0.22 25;
+    --destructive-foreground: 0.98 0 0;
+
+    --border: 0.92 0 0;
+    --input: 0.92 0 0;
+    --ring: 0.18 0 0;
+
+    --chart-1: 0.65 0.22 40;
+    --chart-2: 0.6 0.12 185;
+    --chart-3: 0.4 0.07 227;
+    --chart-4: 0.83 0.19 84;
+    --chart-5: 0.77 0.19 70;
+
+    --sidebar: 0.96 0 0;
+    --sidebar-foreground: 0.08 0 0;
+    --sidebar-primary: 0.18 0 0;
+    --sidebar-primary-foreground: 0.98 0 0;
+    --sidebar-accent: 0.82 0 0;
+    --sidebar-accent-foreground: 0.12 0 0;
+    --sidebar-border: 0.92 0 0;
+    --sidebar-ring: 0.18 0 0;
+
+    --gradient-hero: linear-gradient(135deg, oklch(0.25 0 0), oklch(0.5 0 0));
+    --gradient-editorial: linear-gradient(
+      180deg,
+      oklch(0.3 0 0) 0%,
+      oklch(0.65 0 0) 100%
+    );
+  }
+
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground font-body antialiased;
+  }
+}
+
+@font-face {
+  font-family: "General Sans";
+  src: url("/assets/fonts/GeneralSans.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Geist Mono";
+  src: url("/assets/fonts/GeistMono.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@layer utilities {
+  .transition-smooth {
+    transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  .text-display-lg {
+    @apply text-5xl font-display font-semibold tracking-wider leading-tight;
+  }
+
+  .text-display-md {
+    @apply text-4xl font-display font-semibold tracking-wider leading-snug;
+  }
+
+  .text-display-sm {
+    @apply text-3xl font-display font-semibold tracking-wide leading-snug;
+  }
+
+  .text-body-lg {
+    @apply text-lg font-body font-normal leading-relaxed;
+  }
+
+  .text-body-md {
+    @apply text-base font-body font-normal leading-relaxed;
+  }
+
+  .text-body-sm {
+    @apply text-sm font-body font-normal leading-relaxed;
+  }
+
+  .hover-lift {
+    @apply transition-smooth hover:scale-105 hover:shadow-md;
+  }
+
+  .nav-link {
+    @apply transition-smooth hover:opacity-60 relative inline-block pb-1 hover:border-b hover:border-foreground;
+  }
+
+  .gradient-editorial {
+    background: var(--gradient-editorial);
+  }
+
+  .gradient-hero {
+    background: var(--gradient-hero);
+  }
+
+  .shadow-editorial {
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  }
+
+  .shadow-lifted {
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+  }
+}
